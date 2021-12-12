@@ -45,11 +45,64 @@
 	
 </header>
       <main class="page">
-        <div class="mainblock">
-          <img src="img/mainblock/bgmain.jpg" class="background" />
-        </div>
+        <section class="mainblock" id="home">
+          <div class="mainblock__image">
+            <img src="img/mainblock/bgmain.jpg" class="background" alt="" />
+          </div>
+          <div class="mainblock__content">
+            <div class="container">
+              <img src="img/mainblock/logo.png" alt="" />
+              <div class="mainblock__text">
+                <div class="mainblock__title">3 Lines per hour</div>
+                <div class="mainblock__subtitle">but look at them</div>
+              </div>
+              <div class="mainblock__footer">
+                <a
+                  onclick="document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });"
+                  class="mainblock__arrow"
+                  ><img src="img/icons/arrow.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <img src="img/mainblock/logo1.png" class="logo" alt="" />
+        <section class="navbar" id="info">
+          <div class="menu menu_mb">
+            <nav class="menu__items">
+              <ul class="menu__list">
+                <li>
+                  <a
+                    onclick="document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });"
+                    class="menu__link menu__link_act"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a
+                    onclick="document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });"
+                    class="menu__link"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li>
+                  <a
+                    onclick="document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });"
+                    class="menu__link"
+                    >PORTFOLIO</a
+                  >
+                </li>
+                <li>
+                  <a
+                    onclick="document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });"
+                    class="menu__link"
+                    >CONTACT</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
       </main>
       <footer class="footer">
 	<div class="container">
@@ -83,5 +136,11 @@
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
+
+<script
+  defer
+  src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+></script>
+
   </body>
 </html>

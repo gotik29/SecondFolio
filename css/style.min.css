@@ -849,13 +849,11 @@ body.ie ._ibg img {
   }
 }
 
-.mainblock {
-  height: 100vh;
-}
 .mainblock__content {
   position: relative;
   justify-content: center;
   text-align: center;
+  height: 100vh;
 }
 .mainblock__logo {
   display: inline-block;
@@ -881,7 +879,7 @@ body.ie ._ibg img {
   padding-bottom: 40px;
 }
 .mainblock__footer {
-  padding: 23vh;
+  margin: 23vh;
   text-align: center;
 }
 .mainblock__arrow {
@@ -960,10 +958,17 @@ body.ie ._ibg img {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
 }
 .menu__link:hover {
   color: #5294e2;
+  transition: 0.4s;
 }
 .menu__link_act {
   color: #5294e2;
+}
+.menu__link_act:hover {
+  color: #39679e;
+  transition: 0.4s;
 }

@@ -100,10 +100,6 @@ body._lock {
   overflow: hidden;
 }
 
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-}
 .container {
   max-width: 1130px;
   padding: 0 15px;
@@ -811,8 +807,8 @@ body.ie ._ibg img {
 }
 */
 ::selection {
-  background-color: #ee6352;
-  color: white;
+  background-color: #5294e2;
+  color: #c5c7cb;
 }
 
 ::-webkit-scrollbar {
@@ -849,6 +845,11 @@ body.ie ._ibg img {
   }
 }
 
+.mainblock {
+  margin: 0;
+  place-content: center;
+  text-align: center;
+}
 .mainblock__content {
   position: relative;
   justify-content: center;
@@ -859,24 +860,32 @@ body.ie ._ibg img {
   display: inline-block;
 }
 .mainblock__text {
-  color: #e5e5e5;
+  color: #c5c7cb;
   position: relative;
   text-align: center;
-  padding: 10vh;
+  padding-top: 10vh;
+  padding-bottom: 70px;
 }
 .mainblock__title {
-  font-size: 34px;
-  line-height: 40px;
+  width: 18.5ch;
   text-transform: uppercase;
+  position: relative;
   font-weight: 900;
   letter-spacing: 5.43px;
-  padding-bottom: 15px;
+  font-size: 32px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid black;
+  animation: flashing-border 0.75s step-end infinite, printed 4s steps(19);
 }
 .mainblock__subtitle {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
-  letter-spacing: 4.15px;
-  padding-bottom: 40px;
+  padding-top: 15px;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
 }
 .mainblock__footer {
   margin: 23vh;
@@ -886,6 +895,34 @@ body.ie ._ibg img {
   animation: arrow 1s infinite ease;
   position: relative;
   cursor: pointer;
+  padding: 5px;
+}
+
+@keyframes flashing-border {
+  0% {
+    border-color: black;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+@keyframes printed {
+  from {
+    width: 0;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+:root {
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 24;
 }
 
 @keyframes arrow {
@@ -934,12 +971,14 @@ body.ie ._ibg img {
 }
 .navbar {
   background: #383c4a;
-  height: 100vh;
 }
 
 .menu {
   padding: 22px 0;
   border-bottom: 1px solid #5294e2;
+  position: sticky;
+  top: 0;
+  min-height: 2em;
 }
 .menu__list {
   display: -webkit-box;

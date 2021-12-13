@@ -969,16 +969,13 @@ body.ie ._ibg img {
     top: 0;
   }
 }
-.navbar {
-  background: #383c4a;
-}
-
 .menu {
   padding: 22px 0;
   border-bottom: 1px solid #5294e2;
   position: sticky;
   top: 0;
   min-height: 2em;
+  background: #383c4a;
 }
 .menu__list {
   display: -webkit-box;

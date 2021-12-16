@@ -809,6 +809,32 @@ body.ie ._ibg img {
 	}
 }
 */
+.icon {
+  -webkit-filter: invert(0.75);
+  filter: invert(0.75);
+}
+
+.icon1 {
+  -webkit-filter: invert(0.75);
+  filter: invert(0.75);
+  padding-left: 7px;
+}
+
+:root {
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 24;
+  --clr-primary-400: 199 16% 39%;
+  --clr-secondary-400: 183 8% 47%;
+  --clr-secondary-500: 210, 13%, 50%;
+  --clr-neutral-100: 0 0% 100%;
+  --clr-neutral1-100: 204, 19%, 26%;
+  --clr-neutral-200: 206, 18%, 40%;
+  --clr-neutral-300: 0 0% 81%;
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+}
+
 ::selection {
   background-color: #5294e2;
   color: #c5c7cb;
@@ -925,21 +951,6 @@ body.ie ._ibg img {
     transform: translateY(0);
   }
 }
-:root {
-  --typewriterSpeed: 3s;
-  --typewriterCharacters: 24;
-  --clr-primary-400: 199 16% 39%;
-  --clr-secondary-400: 183 8% 47%;
-  --clr-secondary-500: 210, 13%, 50%;
-  --clr-neutral-100: 0 0% 100%;
-  --clr-neutral1-100: 204, 19%, 26%;
-  --clr-neutral-200: 206, 18%, 40%;
-  --clr-neutral-300: 0 0% 81%;
-  --fs-300: 0.6875rem;
-  --fs-400: 0.8125rem;
-  --fs-500: 1.25rem;
-}
-
 @keyframes arrow {
   0% {
     top: 0;
@@ -1020,6 +1031,7 @@ body.ie ._ibg img {
 .menu__link:hover {
   color: #5294e2;
   transition: 0.4s;
+  text-shadow: 0 0 1px #fff, 0 0 42px #5294e2, 0 0 82px #5294e2, 0 0 92px #5294e2, 0 0 102px #5294e2, 0 0 151px #5294e2;
 }
 .menu__link_act {
   color: #5294e2;
@@ -1027,6 +1039,7 @@ body.ie ._ibg img {
 .menu__link_act:hover {
   color: #39679e;
   transition: 0.4s;
+  text-shadow: 0 0 1px #fff, 0 0 42px #39679e, 0 0 82px #39679e, 0 0 92px #39679e, 0 0 102px #39679e, 0 0 151px #39679e;
 }
 
 .about {
@@ -1053,7 +1066,8 @@ body.ie ._ibg img {
 }
 .about__icon {
   border-radius: 50%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #5294e2;
+  box-shadow: 0 0 151px #5294e2;
   width: 92px;
   height: 92px;
   display: -webkit-inline-box;
@@ -1162,6 +1176,7 @@ body.ie ._ibg img {
 
 .testimonial__gitLogo:hover {
   background-color: #5294e2;
+  box-shadow: 0 0 1px #fff, 0 0 130px #5294e2;
   border-radius: 0.5rem;
   opacity: 1;
   visibility: visible;

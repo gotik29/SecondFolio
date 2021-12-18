@@ -908,19 +908,18 @@ body.ie ._ibg img {
   padding-bottom: 70px;
 }
 .mainblock__title {
-  width: 16ch;
   text-transform: uppercase;
   position: relative;
   font-weight: 900;
   letter-spacing: 5.43px;
-  font-size: 32px;
+  font-size: 26px;
   display: inline-block;
+  border-right: 3px solid black;
+  padding-top: 2px;
+  padding-bottom: 2px;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid black;
-  animation: flashing-border 0.75s step-end infinite, printed 4s steps(19);
-  padding-top: 5px;
-  padding-bottom: 5px;
+  animation: animated-text 4s steps(20, end) 1s 1 normal both, animated-cursor 600ms steps(50, end) infinite;
 }
 .mainblock__subtitle {
   font-size: 24px;
@@ -941,23 +940,20 @@ body.ie ._ibg img {
   padding: 5px;
 }
 
-@keyframes flashing-border {
-  0% {
-    border-color: black;
+@keyframes animated-cursor {
+  from {
+    border-right-color: black;
   }
-  50% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: black;
+  to {
+    border-right-color: transparent;
   }
 }
-@keyframes printed {
+@keyframes animated-text {
   from {
     width: 0;
   }
   to {
-    width: 16ch;
+    width: 20ch;
   }
 }
 @keyframes fadeInUp {

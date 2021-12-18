@@ -956,6 +956,9 @@ body.ie ._ibg img {
   from {
     width: 0;
   }
+  to {
+    width: 18.5ch;
+  }
 }
 @keyframes fadeInUp {
   to {

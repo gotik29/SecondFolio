@@ -908,7 +908,7 @@ body.ie ._ibg img {
   padding-bottom: 70px;
 }
 .mainblock__title {
-  width: 18.5ch;
+  width: 16ch;
   text-transform: uppercase;
   position: relative;
   font-weight: 900;
@@ -957,7 +957,7 @@ body.ie ._ibg img {
     width: 0;
   }
   to {
-    width: 18.5ch;
+    width: 16ch;
   }
 }
 @keyframes fadeInUp {

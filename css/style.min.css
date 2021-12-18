@@ -111,7 +111,7 @@ body._lock {
   padding: 0px 0px;
 }
 .btn_g {
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
 .btn._fw {
   width: 100%;
@@ -219,11 +219,23 @@ textarea:focus {
 }
 
 .input {
+  position: relative;
+  height: 50px;
   border-radius: 0 !important;
   width: 100%;
   display: block;
+  font-size: 15px;
   padding: 0px 20px;
+  border-top: 1px solid #000;
+  background-color: #f8f7f7;
 }
+.input._focus {
+  border-top: 1px solid blue;
+}
+.input._error {
+  border-top: 1px solid red;
+}
+
 textarea.input {
   resize: none;
   padding: 0px 0px;
@@ -810,8 +822,8 @@ body.ie ._ibg img {
 }
 */
 .icon {
-  -webkit-filter: invert(0.75);
-  filter: invert(0.75);
+  -webkit-filter: invert(3);
+  filter: invert(3);
 }
 
 .icon1 {
@@ -1043,7 +1055,7 @@ body.ie ._ibg img {
 }
 
 .about {
-  padding: 60px;
+  height: 100vh;
 }
 .about__body {
   text-align: center;
@@ -1226,4 +1238,115 @@ body.ie ._ibg img {
 .testimonial > p:last-of-type {
   opacity: 0.7;
   z-index: 1;
+}
+
+.contacts {
+  color: #e5e5e5;
+  height: 100vh;
+}
+.contacts__header-block {
+  margin: 0 0 120px 0;
+}
+.contacts__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -25px;
+}
+.contacts__column {
+  flex: 0 1 50%;
+  padding: 0 25px;
+}
+.contacts__form {
+  text-align: right;
+}
+.contacts__content {
+  max-width: 260px;
+}
+.contacts__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 35px 0;
+}
+.contacts__name {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0 0 25px 0;
+}
+.contacts__email {
+  font-size: 14px;
+}
+.contacts__email a {
+  font-weight: 700;
+  color: #e5e5e5;
+}
+.contacts__email a:hover {
+  text-decoration: underline;
+}
+
+.form-contacts__body {
+  display: inline-block;
+  width: 100%;
+  max-width: 385px;
+}
+.form-contacts__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px 70px -15px;
+}
+.form-contacts__column {
+  flex: 0 1 50%;
+  padding: 0 15px;
+}
+.form-contacts__label {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+.form-contacts .btn.btn {
+  margin: 35px 0 0 0;
+}
+
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 15px 0;
+}
+.social__item {
+  margin: 0 15px 0 0;
+}
+
+.btn_b {
+  border: 1px solid #fff;
+  color: #e5e5e5;
+  margin-bottom: 10px;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+  background: #000000;
+  letter-spacing: 0.1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  transform: scale(1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn_b:hover {
+  background: #535353;
+  transform: scale(1.05);
+  color: #e5e5e5;
 }

@@ -818,6 +818,47 @@ body.ie ._ibg img {
 	}
 }
 */
+.row {
+  text-align: center;
+  justify-content: center;
+  background: #242424;
+}
+
+.col {
+  padding: 30px 0 30px 0;
+  color: #e5e5e5;
+  font-size: 0.875rem;
+}
+
+.button {
+  color: #e5e5e5;
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: #e02bff;
+}
+
+#scroll {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  z-index: 99999;
+  padding: 5px 5px 4px 5px;
+  border-radius: 50%;
+}
+
+#scroll:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+
+#scroll img {
+  width: 40px;
+}
+
 .icon {
   -webkit-filter: invert(3);
   filter: invert(3);

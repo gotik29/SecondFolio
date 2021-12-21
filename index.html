@@ -66,7 +66,6 @@
             </div>
           </div>
         </section>
-
         <section class="navbar" id="about">
           <div class="menu menu_mb">
             <nav class="menu__items">
@@ -311,7 +310,7 @@
                                 name="form[]"
                                 data-value=""
                                 class="input"
-                                req
+                                required
                               />
                             </div>
                           </div>
@@ -320,25 +319,18 @@
                               <div class="form-contacts__label">YOUR E-MAIL</div>
                               <input
                                 autocomplete="off"
-                                type="text"
                                 name="form[]"
                                 data-value=""
-                                class="input"
-                                req
-                                email
+                                class="input req email"
+                                required
+                                type="email"
                               />
                             </div>
                           </div>
                         </div>
                         <div class="form-contacts__input">
                           <div class="form-contacts__label">MESSAGE</div>
-                          <textarea
-                            autocomplete="off"
-                            name="form[]"
-                            data-value=""
-                            class="input"
-                          >
-                          </textarea>
+                          <textarea autocomplete="off" type="text" name="form[]" data-value="" class="input"></textarea>
                         </div>
                         <button
                           type="submit"
@@ -407,8 +399,8 @@
 </div>
  <!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<script src="js/vendors.min.js"></script>
-<script src="js/app.min.js"></script>
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
 
 <script
   defer

@@ -106,10 +106,6 @@ body._lock {
   margin: 0px auto;
 }
 
-.btn {
-  display: flex;
-  padding: 0px 0px;
-}
 .btn_g {
   color: #e5e5e5;
 }
@@ -226,19 +222,20 @@ textarea:focus {
   display: block;
   font-size: 15px;
   padding: 0px 20px;
-  border-top: 1px solid #000;
-  background-color: #f8f7f7;
+  border-top: 1px solid #e5e5e5;
+  background-color: #9e9d9d;
 }
-.input._focus {
-  border-top: 1px solid blue;
+.input:focus {
+  border-top: 2px solid #5294e2;
 }
-.input._error {
-  border-top: 1px solid red;
+.input.error {
+  border-top: 2px solid red;
 }
 
 textarea.input {
   resize: none;
-  padding: 0px 0px;
+  height: 117px;
+  padding: 10px 20px;
 }
 
 .checkbox {
@@ -285,7 +282,7 @@ textarea.input {
     text-decoration: none;
   }
 }
-.checkbox._error .checkbox__text:before {
+.checkbox:error .checkbox__text:before {
   border: 1px solid #ee1212;
 }
 
@@ -927,7 +924,7 @@ body.ie ._ibg img {
   padding-top: 15px;
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 1s ease calc(var(--typewriterSpeed) + 1s) forwards;
+  animation: fadeInUp 1s ease calc(var(--typewriterSpeed) + 2s) forwards;
 }
 .mainblock__footer {
   margin: 23vh;
@@ -1281,9 +1278,12 @@ body.ie ._ibg img {
 .contacts__email a {
   font-weight: 700;
   color: #e5e5e5;
+  transition: 1s;
 }
 .contacts__email a:hover {
   text-decoration: underline;
+  color: #5294e2;
+  transition: 1s;
 }
 
 .form-contacts__body {
@@ -1310,9 +1310,6 @@ body.ie ._ibg img {
   text-transform: uppercase;
   text-align: left;
 }
-.form-contacts .btn.btn {
-  margin: 35px 0 0 0;
-}
 
 .social {
   display: -webkit-box;
@@ -1326,6 +1323,9 @@ body.ie ._ibg img {
   margin: 0 15px 0 0;
 }
 
+.btn {
+  margin: 35px 0 0 0;
+}
 .btn_b {
   border: 1px solid #fff;
   color: #e5e5e5;
